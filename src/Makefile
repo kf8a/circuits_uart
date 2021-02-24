@@ -40,6 +40,7 @@ ifeq ($(OS),Windows_NT)
 
 # Libraries needed to enumerate serial ports
 LDFLAGS += -lSetupapi -lCfgmgr32
+LDFLAGS += -lpthread
 
 # On Windows, make defaults CC=cc and
 # cc doesn't exist with mingw
